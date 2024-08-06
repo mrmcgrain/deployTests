@@ -24,6 +24,7 @@ app.use(
         methods: ["POST", "GET", "PUT", "PATCH", "DELETE"],
         // origin: [`89.116.191.98:5173`],
         "Access-Control-Allow-Origin": "*",
+        origin: "*",
         optionsSuccessStatus: 200,
         credentials: true,
     })
