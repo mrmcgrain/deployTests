@@ -23,10 +23,10 @@ app.use(
     cors({
         methods: ["POST", "GET", "PUT", "PATCH", "DELETE"],
         // origin: [`89.116.191.98:5173`],
-        "Access-Control-Allow-Origin": "*",
+        // access: "*",
         origin: "*",
         optionsSuccessStatus: 200,
-        credentials: true,
+        // credentials: true,
     })
 );
 app.use(express.json());
@@ -34,15 +34,15 @@ app.use(express.json());
 // const Router = require("./routes/routes");
 // Router(app);
 
-app.get("/test", (req, res) => {
-    // console.log("res", res)
-    res.json({ msg: "got it hommie" })
+app.get("/test/", (req, res) => {
+    console.log("Test hit, res", req.ip)
+    res.json({ msg: "got it hommie"})
 })
 
 app.listen(port, () => {
     //   mongoose.connect(process.env.MONGO_URI).then(() => {
     //     console.log("connected to Database");
-    //   });
+    //    }); 
 
     console.log(`Server is running on port: ${port}`);
 });
