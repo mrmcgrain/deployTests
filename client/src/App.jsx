@@ -9,7 +9,7 @@ function App() {
   const [data, setData] = useState({})
 
   const handleClick = (e) => {
-   
+
     axios({
       method: "GET",
       url: "http://localhost:3000/test"
@@ -26,6 +26,7 @@ function App() {
   return (
     <>
       {console.log("data", data)}
+      <p>{data.msg}</p>
       <button onClick={(e) => handleClick()}>click</button>
 
     </>
