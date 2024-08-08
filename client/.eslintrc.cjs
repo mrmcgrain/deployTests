@@ -18,4 +18,6 @@ module.exports = {
       { allowConstantExport: true },
     ],
   },
+ "import/no-webpack-loader-syntax": "off",
+"import/no-unresolved": "off"
 }
