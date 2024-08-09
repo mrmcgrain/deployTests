@@ -3,7 +3,6 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import axios from 'axios'
-import IPFinder from './IPFinder/IPFinder'
 
 
 function App() {
@@ -31,7 +30,6 @@ function App() {
       {/* <p>{data.msg}</p> */}
       {/* <button onClick={(e) => handleClick()}>click</button> */}
       <p>test ci cd</p>
-      <IPFinder />
 
 
     </>
