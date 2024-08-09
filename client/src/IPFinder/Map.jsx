@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'; 
 import ReactMapGL, { Marker } from 'react-map-gl'; 
-// import { RiUserLocationFill } from 'react-icons/ri'; 
+import { RiUserLocationFill } from 'react-icons/ri'; 
   
 // const API_KEY = 'pk.eyJ1IjoibW1jZ3JhaW4yMyIsImEiOiJjbHpsczJ0ZGYwNWljMnBwcTd4d2kzZHpmIn0.Nq_4uizdH8yB6cSsmvYWzw'; 
 const API_KEY = 'pk.eyJ1IjoibW1jZ3JhaW4yMyIsImEiOiJjbHpsczJ0ZGYwNWljMnBwcTd4d2kzZHpmIn0.Nq_4uizdH8yB6cSsmvYWzw'; 
   
-const -+Map = ({ lat, lon }) => { 
+const Map = ({ lat, lon }) => { 
   
     // Setting up the initial viewport of the map 
     const [viewport, setViewport] = useState({ 
@@ -38,7 +38,7 @@ const -+Map = ({ lat, lon }) => {
                 
                 <Marker latitude={lat} longitude={lon}> 
                     <div className="mark"> 
-                        {/* <RiUserLocationFill size="25px" color="blue" />  */}
+                        <RiUserLocationFill size="25px" color="blue" /> 
                     </div> 
                 </Marker> 
             </ReactMapGL> 
