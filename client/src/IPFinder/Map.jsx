@@ -5,7 +5,7 @@ import ReactMapGL, { Marker } from 'react-map-gl';
 // const API_KEY = 'pk.eyJ1IjoibW1jZ3JhaW4yMyIsImEiOiJjbHpsczJ0ZGYwNWljMnBwcTd4d2kzZHpmIn0.Nq_4uizdH8yB6cSsmvYWzw'; 
 const API_KEY = 'pk.eyJ1IjoibW1jZ3JhaW4yMyIsImEiOiJjbHpsczJ0ZGYwNWljMnBwcTd4d2kzZHpmIn0.Nq_4uizdH8yB6cSsmvYWzw'; 
   
-const Map = ({ lat, lon }) => { 
+const -+Map = ({ lat, lon }) => { 
   
     // Setting up the initial viewport of the map 
     const [viewport, setViewport] = useState({ 

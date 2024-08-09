@@ -54,7 +54,7 @@ function App() {
                     <p>{ipDetails.org}</p>
 
                 </div>
-                <Map lat={lat} lon={lon} />
+                {/* <Map lat={lat} lon={lon} /> */}
             </div>
         </>
     );
