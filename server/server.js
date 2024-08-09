@@ -39,6 +39,11 @@ app.get("/test/", (req, res) => {
     res.json({ msg: "got it hommie"})
 })
 
+
+
+
+
+
 app.listen(port, () => {
     //   mongoose.connect(process.env.MONGO_URI).then(() => {
     //     console.log("connected to Database");
