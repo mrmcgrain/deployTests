@@ -37,4 +37,4 @@ jobs:
       - name: Deploy to production
         run: |
           echo "Deploying to production..."
-          # Add your deployment script or commands here
+          serve -s dist
