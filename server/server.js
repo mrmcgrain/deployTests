@@ -24,7 +24,7 @@ app.use(
         methods: ["POST", "GET", "PUT", "PATCH", "DELETE"],
         // origin: [`89.116.191.98:5173`],
         // access: "*",
-        origin: "*",
+        origin: "http://89.116.191.98/",
         optionsSuccessStatus: 200,
         // credentials: true,
     })
