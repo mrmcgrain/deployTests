@@ -15,7 +15,7 @@
 
 import { useEffect, useState } from 'react';
 import Axios from 'axios';
-import Map from './Map';
+// import Map from './Map';
 import '../App.css';
 import "./ipfinder.css"
 function App() {
@@ -54,7 +54,7 @@ function App() {
                     <p>{ipDetails.org}</p>
 
                 </div>
-                <Map lat={lat} lon={lon} />
+                {/* <Map lat={lat} lon={lon} /> */}
             </div>
         </>
     );
