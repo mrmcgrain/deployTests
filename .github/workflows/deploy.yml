@@ -16,10 +16,10 @@ jobs:
     - name: Set up SSH
       uses: webfactory/ssh-agent@v0.5.4
       with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
+        GITHUB_TOKEN: ${{ secrets.TOKEN}}
     #     ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-    - name: Transfer files to VPS
+    - name: Transfer files to VPS - deploy
       run: |
         rsync -avz -e "ssh -o StrictHostKeyChecking=no" c:\Users\mmcgr\Desktop\dev\github\Deploy root@89.116.191.98:/root/deployTests/ 
 
