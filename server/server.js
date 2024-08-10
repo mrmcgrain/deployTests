@@ -35,8 +35,9 @@ app.use(express.json());
 // Router(app);
 
 app.get("/test/", (req, res) => {
-    console.log("Test hit, res", req.ip)
     
+    console.log("Test hit, res", req.ip)
+
     res.json({ msg: "got it hommie"})
 })
 
