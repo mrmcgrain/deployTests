@@ -19,8 +19,4 @@ jobs:
         ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
     - name: Deploy files to Hostinger
-      run: |
-        rsync -avz --delete-after \
-        -e "ssh -o StrictHostKeyChecking=no" \
-        ./your-local-directory/ \
-        michael.r.mcgrain@gmail.com@89.116.191.98:/root/deployTests
+      run: rsync -avz --delete-after -e "ssh -o StrictHostKeyChecking=no" ./your-local-directory/ michael.r.mcgrain@gmail.com@89.116.191.98:/root/deployTests

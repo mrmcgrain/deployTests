@@ -19,6 +19,7 @@ function App() {
         console.log("res", res)
         setData(res.data)
       })
+      
       .catch(err => console.log(err))
   }
 
