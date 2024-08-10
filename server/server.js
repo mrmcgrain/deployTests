@@ -36,6 +36,7 @@ app.use(express.json());
 
 app.get("/test/", (req, res) => {
     console.log("Test hit, res", req.ip)
+    
     res.json({ msg: "got it hommie"})
 })
 
