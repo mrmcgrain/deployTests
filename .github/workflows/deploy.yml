@@ -25,7 +25,8 @@ jobs:
           cd .. 
           ls
           cd ..
-          cd deployTests/client
+          cd deployTests
+          cd client
           npm install
 
       - name: Build project
