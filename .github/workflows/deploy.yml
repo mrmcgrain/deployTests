@@ -21,8 +21,9 @@ jobs:
       - name: Install dependencies
         run: |
           echo "installing and cd to client..."
-          cd client
-          npm install
+          ls
+          # cd client
+          # npm install
 
       - name: Build project
         run: |
