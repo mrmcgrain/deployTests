@@ -22,9 +22,7 @@ jobs:
         run: |
           echo "installing and cd to client..."
 
-          cd .. 
-          ls
-          cd ..
+          cd ../.. 
           cd deployTests
           cd client
           npm install
