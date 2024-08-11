@@ -6,14 +6,16 @@ import axios from 'axios'
 
 
 function App() {
+
+
   const [data, setData] = useState({})
 
-  const handleClick = (e) => {
+  const handleClick = (input) => {
 
     axios({
       method: "GET",
       // url: "http://localhost:3000/test"
-      url: "http://89.116.191.98:5000/test"
+      url: `http://89.116.191.98:${input}/test`
     })
       .then(res => {
         console.log("res", res)
@@ -33,12 +35,13 @@ function App() {
 
 
 
-      {/* {console.log("data", data)} */}
+      {console.log("data", data)}
 
       {/* <p>{data.msg}</p> */}
  
 
-      <button onClick={(e) => handleClick()}>click</button>
+      <button onClick={(e) => handleClick("5000")}>server 1</button>
+      <button onClick={(e) => handleClick("5100")}>server 2</button>
       
       <p>test ci cd</p>
 
