@@ -21,14 +21,13 @@ jobs:
       - name: Install dependencies
         run: |
           echo "installing and cd to client..."
-          ls
-          # cd client
-          # npm install
+          cd client
+          npm install
 
       - name: Build project
         run: |
           echo "calling build ..."
-          cd client
+          # cd client
           npm run build
 
   deploy:
