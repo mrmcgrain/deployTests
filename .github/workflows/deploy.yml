@@ -27,6 +27,7 @@ jobs:
       - name: Build project
         run: |
           echo "calling build ..."
+          cd client
           npm run build
 
   deploy:
