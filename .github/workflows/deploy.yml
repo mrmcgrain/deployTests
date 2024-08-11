@@ -46,7 +46,7 @@ jobs:
     - name: Deploy files to Hostinger
       run: rsync -avz --delete-after -e "ssh -o StrictHostKeyChecking=no" ./ root@89.116.191.98:/root/deployTests
 
-    - name: Deploy to prod  
-      run: |
-          echo "Deploying to production..."
-          serve -s dist
+    # - name: Deploy to prod  
+    #   run: |
+    #       echo "Deploying to production..."
+    #       serve -s dist
