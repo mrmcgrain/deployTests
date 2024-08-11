@@ -28,7 +28,7 @@ jobs:
         run: |
           echo "calling build ..."
           cd client
-          mkdir whereami
+          touch whereami
           npm run build
 
   deploy:
