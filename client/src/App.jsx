@@ -38,7 +38,7 @@ function App() {
       {/* <p>{data.msg}</p> */}
  
 
-      {/* <button onClick={(e) => handleClick()}>click</button> */}
+      <button onClick={(e) => handleClick()}>click</button>
       
       <p>test ci cd</p>
 
