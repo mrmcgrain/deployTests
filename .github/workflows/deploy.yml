@@ -25,32 +25,26 @@ jobs:
           cd client
           npm install
 
-      # - name: Run tests
-      #   run: npm test
-
       - name: Build project
         run: |
-        echo "calling build ..."
-        npm run build
-
-
-
+          echo "calling build ..."
+          npm run build
 
   deploy:
     runs-on: ubuntu-latest
     needs: build   #ensures the above completes before this runs
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Set up SSH agent
-      uses: webfactory/ssh-agent@v0.5.3
-      with:
-        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+      - name: Set up SSH agent
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-    - name: Deploy files to VPS @ Hostinger
-      run: rsync -avz --delete-after -e "ssh -o StrictHostKeyChecking=no" ./ root@89.116.191.98:/root/deployTests
+      - name: Deploy files to VPS @ Hostinger
+        run: rsync -avz --delete-after -e "ssh -o StrictHostKeyChecking=no" ./ root@89.116.191.98:/root/deployTests
 
     # start:
     #   runs-on: ubuntu-latest
