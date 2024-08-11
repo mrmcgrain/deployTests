@@ -21,10 +21,7 @@ jobs:
       - name: Install dependencies
         run: |
           echo "installing and cd to client..."
-
-          cd ../.. 
-          cd deployTests
-          cd client
+          cd ../../deployTests/client
           npm install
 
       - name: Build project
