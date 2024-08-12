@@ -46,9 +46,9 @@ jobs:
       - name: Deploy files to VPS @ Hostinger
         run: rsync -avz --delete-after -e "ssh -o StrictHostKeyChecking=no" ./ root@89.116.191.98:/root/deployTests
 
- deploy1:
+  deploy1:
     runs-on: ubuntu-latest
-    needs: deply   #ensures the above completes before this runs
+    needs: deploy   #ensures the above completes before this runs
 
       - name: Build project
         run: |
