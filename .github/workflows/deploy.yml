@@ -22,8 +22,8 @@ jobs:
       # run: pwd
       run: |
            ls
-    #  cd ..;
-    #  npm install
+           cd client
+           npm v
 
     - name: Run build
       # run: pwd
