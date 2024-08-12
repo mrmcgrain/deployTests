@@ -24,11 +24,10 @@ jobs:
 
           npm install
 
-      # - name: Build project
-      #   run: |
-      #     echo "calling build ..."
-      #     cd client
-      #     npm run build
+      - name: Build project
+        run: |
+          echo "calling build ..."
+          npm run build
 
   deploy:
     runs-on: ubuntu-latest
