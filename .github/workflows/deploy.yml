@@ -7,7 +7,7 @@ on:
 
   deploy:
     runs-on: ubuntu-latest
-    needs: build   #ensures the above completes before this runs
+    # needs: build   #ensures the above completes before this runs
 
     steps:
 
