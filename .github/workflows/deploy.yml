@@ -14,7 +14,7 @@ on:
       - name: run Build 
         run: |
           echo "calling build ..."
-          cd client
+          # cd client
           npm run build
 
 
@@ -50,7 +50,6 @@ jobs:
       - name: Install dependencies
         run: |
           echo "installing and cd to client..."
-          cd client
           npm install
 
       # - name: Build project
