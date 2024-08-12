@@ -53,7 +53,7 @@ jobs:
       - name: run Build 
         run: |
           echo "calling build ..."
-          cd client
+          # cd client
           npm run build
     # start:
     #   runs-on: ubuntu-latest
