@@ -20,7 +20,7 @@ jobs:
 
     - name: Install dependencies
       # run: pwd
-      run: npm install
+      run: (npm install) cd ..;
 
     - name: Run build
       # run: pwd
