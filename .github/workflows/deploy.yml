@@ -19,11 +19,12 @@ jobs:
         node-version: '18.x'
 
     - name: Install dependencies
-      run: npm install
+      run: pwd
+      # run: npm install
 
     - name: Run build
-      run: pwd
-      # run: cd client, npm run build
+      # run: pwd
+      run: cd client, npm run build
 
     - name: Archive production artifacts
       run: zip -r build.zip ./build
