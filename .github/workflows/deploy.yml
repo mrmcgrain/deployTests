@@ -14,7 +14,7 @@ on:
       - name: run Build 
         run: |
           echo "calling build ..."
-          cd /home/runner/work/deployTests/deployTests/client
+          cd client
           npm run build
 
 
