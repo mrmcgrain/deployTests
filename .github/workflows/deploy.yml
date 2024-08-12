@@ -21,8 +21,9 @@ jobs:
     - name: Install dependencies
       # run: pwd
       run: |
-       cd ..;
-       npm install
+           ls
+    #  cd ..;
+    #  npm install
 
     - name: Run build
       # run: pwd
