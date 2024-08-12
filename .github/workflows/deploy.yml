@@ -21,6 +21,7 @@ jobs:
 
     - run: cd ..
     - run: pwd
+    - run: cd client
     - run: npm i
     # - uses: actions/checkout@v4
     # - name: Use Node.js ${{ matrix.node-version }}
