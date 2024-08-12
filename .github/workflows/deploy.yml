@@ -22,14 +22,13 @@ jobs:
       # run: pwd
       run: |
            ls
-           cd client
-           npm v
+           npm install --prefix ./client
 
     - name: Run build
       # run: pwd
       run: |
             cd client
-            sudo npm run build
+            npm run build
 
     - name: Archive production artifacts
       run: zip -r build.zip ./build
