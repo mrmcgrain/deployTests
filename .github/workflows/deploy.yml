@@ -20,8 +20,8 @@ jobs:
 
     - name: Install dependencies
       # run: pwd
-      run: |
-           ls
+      run: 
+          #  ls
           #  cd ~/deployTests/client/
            npm install 
           #  npm install --prefix ./client
