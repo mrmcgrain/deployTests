@@ -38,8 +38,10 @@ jobs:
       # run: pwd
       run: |
            cd /home/runner/work/deployTests/deployTests/client
-           chmod +x node_modules/.bin/vite
+          #  chmod +x node_modules/.bin/vite
+           ls
            npm run build
+           
 
     - name: Archive production artifacts
       run: zip -r build.zip ./build
