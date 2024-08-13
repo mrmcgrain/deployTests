@@ -21,9 +21,8 @@ jobs:
     - name: Install dependencies
       # run: pwd
       run: |
-          #  ls
            cd ~/deployTests/client/
-           npm install 
+           npm v 
           #  npm install --prefix ./client
 
     - name: Run build
