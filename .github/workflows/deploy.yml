@@ -28,8 +28,7 @@ jobs:
           # cd ~/deployTests/
       run: |
            cd /home/runner/work/deployTests/deployTests
-           rm client
-           mkdir client
+           cd client
            ls
            npm i 
           #  npm install --prefix ./client
