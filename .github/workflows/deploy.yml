@@ -22,12 +22,13 @@ jobs:
       # run: pwd
       run: |
            ls
+           cd ~/deployTests/client/
            npm install --prefix ./client
 
     - name: Run build
       # run: pwd
       run: |
-            cd client
+            cd ~/deployTests/client/
             npm run build
 
     - name: Archive production artifacts
