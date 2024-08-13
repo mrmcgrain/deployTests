@@ -40,6 +40,7 @@ jobs:
            ls
           #  sudo chmod +x /home/runner/work/deployTests/deployTests/client/node_modules/vite/dist/node/cli.js
            npm run build
+           
 
           #  chmod +x node_modules/.bin/vite
 
