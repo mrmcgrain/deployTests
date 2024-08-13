@@ -31,17 +31,15 @@ jobs:
            cd client
            ls
            npm i 
-
           #  npm install --prefix ./client
 
     - name: Run build
-      # run: pwd
       run: |
            cd /home/runner/work/deployTests/deployTests/client
-          #  chmod +x node_modules/.bin/vite
            ls
            npm run build
-           
+
+          #  chmod +x node_modules/.bin/vite
 
     - name: Archive production artifacts
       run: zip -r build.zip ./build
