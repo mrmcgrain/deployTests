@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-
+      
 
 jobs:
   build:
@@ -31,14 +31,15 @@ jobs:
            cd /home/runner/work/deployTests/deployTests
            cd client
            ls
-           npm install && npm run build
+           npm i 
           #  npm install --prefix ./client
 
-    # - name: Run build
-    #   run: |
-    #        cd /home/runner/work/deployTests/deployTests/client
-    #        ls
-    #        npm run build
+    - name: Run build
+      run: |
+           cd /home/runner/work/deployTests/deployTests/client
+           ls
+           sudo chmod +x node_modules/.bin/vite
+           npm run build
 
           #  chmod +x node_modules/.bin/vite
 
