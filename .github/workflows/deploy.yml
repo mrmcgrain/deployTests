@@ -37,6 +37,7 @@ jobs:
     - name: Run build
       # run: pwd
       run: |
+           chmod +x node_modules/.bin/vite
            cd /home/runner/work/deployTests/deployTests/client
            npm run build
 
