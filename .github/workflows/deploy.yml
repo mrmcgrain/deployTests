@@ -31,13 +31,13 @@ jobs:
            cd client
            ls
            npm i 
-           
+
           #  npm install --prefix ./client
 
     - name: Run build
       # run: pwd
       run: |
-           cd /home/runner/work/deployTests/deployTests/
+           cd /home/runner/work/deployTests/deployTests/client
            npm run build
 
     - name: Archive production artifacts
