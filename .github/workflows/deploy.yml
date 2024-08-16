@@ -58,9 +58,10 @@ jobs:
           chmod 600 private_key.pem
           ssh -o StrictHostKeyChecking=no -i private_key.pem root@89.116.191.98 << 'EOF'
             cd /root/client/dist/
+            ls -lah
             unzip -o build.zip
             pm2 stop all
-            pm2 start /path/to/deployment/build
+            pm2 start /root/client/dist
           EOF
           rm private_key.pem
 
