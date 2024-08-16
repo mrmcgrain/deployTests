@@ -33,6 +33,7 @@ jobs:
         run: |
           cd client
           zip -r build.zip ./dist
+          ls -lah
 
       - name: Transfer to VPS
         env:

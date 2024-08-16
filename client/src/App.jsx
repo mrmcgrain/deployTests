@@ -23,6 +23,7 @@ function App() {
         setData(res.data)
       })
       
+      
       .catch(err => console.log(err))
   }
 
