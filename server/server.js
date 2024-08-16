@@ -24,7 +24,7 @@ app.use(
         methods: ["POST", "GET", "PUT", "PATCH", "DELETE"],
         // origin: [`89.116.191.98:5173`],
         // access: "*",
-        origin: "http://89.116.191.98:3000/",
+        origin: "http://89.116.191.98",
         // origin: "*",
         optionsSuccessStatus: 200,
         // credentials: true,
@@ -34,6 +34,8 @@ app.use(express.json());
 
 // const Router = require("./routes/routes");
 // Router(app);
+
+// AM I HERE?
 
 app.get("/test/", (req, res) => {
 
