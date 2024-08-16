@@ -38,13 +38,15 @@ function App() {
 
       {console.log("data", data)}
 
+      
+
       {/* <p>{data.msg}</p> */}
  
 
       <button onClick={(e) => handleClick("5000")}>server 1</button>
       <button onClick={(e) => handleClick("5100")}>server 2</button>
       
-      
+
       <p>test ci cd</p>
 
 
