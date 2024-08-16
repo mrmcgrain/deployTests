@@ -61,7 +61,8 @@ jobs:
             ls -lah
             unzip -o build.zip
             pm2 stop all
-            pm2 start /root/client/dist
+            pm2 start /root/client/dist/dist
+            
           EOF
           rm private_key.pem
 
