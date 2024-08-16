@@ -39,7 +39,8 @@ jobs:
         run: |
           echo "${SSH_PRIVATE_KEY}" > private_key.pem
           chmod 600 private_key.pem
-          scp -o StrictHostKeyChecking=no -i private_key.pem client/build.zip user@your-vps-ip:/path/to/deployment/
+          scp -o StrictHostKeyChecking=no -i private_key.pem client/build.zip root@89.116.191.98
+:/root/client/dist/
           rm private_key.pem
 
   deploy:
