@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a717e50f.css",
+    "main.js": "/static/js/main.4691ee78.js",
+    "static/media/flag.jpg": "/static/media/flag.f67f7e1100dc60f7ea00.jpg",
+    "static/media/getInvolved2.jpg": "/static/media/getInvolved2.a951177f5b2d23ecddad.jpg",
+    "static/media/rally.jpg": "/static/media/rally.05aadf3aa52be4e80de4.jpg",
+    "static/media/voterInfo.jpg": "/static/media/voterInfo.28d03455e95ece43f73e.jpg",
+    "static/media/streetFlag.jpg": "/static/media/streetFlag.a0bf302539168d1c20ac.jpg",
+    "static/media/grassroots.jpg": "/static/media/grassroots.9ec8eb94c239ef2851c3.jpg",
+    "static/media/map2.png": "/static/media/map2.60cb3212133196747395.png",
+    "static/media/map1.png": "/static/media/map1.187014a81c3962838a09.png",
+    "static/media/getinvolved.jpg": "/static/media/getinvolved.d8ac24ad3fb85a79451c.jpg",
+    "static/media/VoterPortal.PNG": "/static/media/VoterPortal.1452b232fac9da96e581.PNG",
+    "static/media/map3.png": "/static/media/map3.145c02cdcce4aaf8680d.png",
+    "static/media/map4.png": "/static/media/map4.aff3f2a01aa8fa5514a6.png",
+    "static/media/abstractflag.jpg": "/static/media/abstractflag.b6c8b32bdc7349856def.jpg",
+    "static/media/AZflag.jpg": "/static/media/AZflag.6f6df63a4fef09aa8a7d.jpg",
+    "static/media/congressflag.jpeg": "/static/media/congressflag.e6a6d513b77db167fe07.jpeg",
+    "static/media/congress.jpeg": "/static/media/congress.3b09d7a09e3cf4e10426.jpeg",
+    "static/media/liberal.jpeg": "/static/media/liberal.f927c5789fbcd1e8cd17.jpeg",
+    "static/media/Voting.jpeg": "/static/media/Voting.61d8126d4686da3247cc.jpeg",
+    "static/media/CCCLogo.png": "/static/media/CCCLogo.9b20fa199b4ca9f0146d.png",
+    "static/media/imgupload.jpg": "/static/media/imgupload.76afeab07fc68eae1b13.jpg",
+    "index.html": "/index.html",
+    "main.a717e50f.css.map": "/static/css/main.a717e50f.css.map",
+    "main.4691ee78.js.map": "/static/js/main.4691ee78.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a717e50f.css",
+    "static/js/main.4691ee78.js"
+  ]
+}
