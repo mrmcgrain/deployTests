@@ -14,7 +14,7 @@ function App() {
     axios({
       method: "GET",
       // url: "http://localhost:3000/test"
-      url: `http://89.116.191.98:${input}/test`
+      url: `https://89.116.191.98:${input}/test`
     })
       .then(res => {
         console.log("res", res)
@@ -23,7 +23,7 @@ function App() {
       
 
 
-      
+
 
       
 
